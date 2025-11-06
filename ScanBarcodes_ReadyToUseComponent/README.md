@@ -69,7 +69,3 @@ Open the **workspace**(!) `ios/Runner.xcworkspace` in Xcode and adjust the *Sign
 ## Support
 
 https://www.dynamsoft.com/company/contact/
-
-## License
-
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)

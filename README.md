@@ -1,14 +1,14 @@
 # Dynamsoft Barcode Reader Flutter Samples
 
-This repository contains multiple samples that show you how use the Dynamsoft Barcode Reader Flutter SDK.
+This repository contains all of the Flutter samples created by the Dynamsoft team to demonstrate the Dynamsoft Barcode Reader Flutter SDK.
 
 ## Requirements
 
 ### Dev tools
 
 * Latest [Flutter SDK](https://flutter.dev/)
-* For Android apps: Android SDK (API Level 21+), platforms and developer tools
-* For iOS apps: iOS 13+, macOS with latest Xcode and command line tools
+* Android: Android SDK (API Level 21+), platforms and developer tools
+* iOS: iOS 13+, macOS with latest Xcode and command line tools
 
 ### Mobile platforms
 
@@ -17,21 +17,26 @@ This repository contains multiple samples that show you how use the Dynamsoft Ba
 
 ## Integration Guide For Your Project
 
-- [Guide for Scanning Barcodes with Ready-to-use Component](./guide-scan-barcodes-ready-to-use-component.md)
-- [Guide for Scanning Barcodes with Foundational APIs](./guide-scan-barcodes-foundational-api.md)
-- [Guide for Scanning Drivers' License](./guide-scan-drivers-license.md)
+- [Barcode Reader Integration Guide (Ready-To-Use Edition)](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/user-guide.html)
+- [Barcode Reader Integration Guide (Foundational Edition)](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/foundational-user-guide.html)
+- [Driver's License Scanner Guide](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/driver-license-user-guide.html)
+
+> [!NOTE]
+> The Ready-To-Use edition comes with a fully developed and designed UI to help ease the development process and help any developer get the Barcode Reader up and running with a few lines of code. 
+> 
+> Alternatively, the Foundational edition is the full API that make up the Barcode Reader and does not come with its own UI. Working with the foundational API requires more effort, but allows the user to fully customize the UI and build the barcode scanner from the ground up.
 
 ## Samples
 
 | Sample Name                                                          | Description                                                                                                         |
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [ScanBarcodes_ReadyToUseComponent](ScanBarcodes_ReadyToUseComponent) | This sample illustrates the simplest way of using `Barcode Scanner API` to recognize barcodes from video streaming. |
-| [ScanBarcodes_FoundationalAPI](ScanBarcodes_FoundationalAPI)         | This sample illustrates the simplest way of using Foundational API to recognize barcodes from video streaming.      |
-| [ScanDriversLicense](ScanDriversLicense)                             | This sample illustrates how to scan drivers' license from video streaming.                                          |
+| [ScanBarcodes_ReadyToUseComponent](ScanBarcodes_ReadyToUseComponent) | This sample demonstrates the simplest way to implement the Barcode Reader using the `BarcodeScanner` (Ready-To-Use) API. |
+| [ScanBarcodes_FoundationalAPI](ScanBarcodes_FoundationalAPI)         | This sample demonstrates the simplest way to implement the Barcode Reader using the Foundational API.      |
+| [ScanDriversLicense](ScanDriversLicense)                             | This sample demonstrates how to implement the ability to scan drivers' licenses using the Foundational API.                                          |
 
-## How to build and run a sample
+## Quick Start
 
-### Step 1: Enter a sample folder that you want to try
+### Step 1: Access the sample folder
 
 ```bash
 cd ScanBarcodes_ReadyToUseComponent
@@ -49,15 +54,15 @@ or
 cd ScanDriversLicense
  ```
 
-### Step 2: Fetch and install the dependencies of this example project via Flutter CLI:
+### Step 2: Install the dependencies of the sample via Flutter CLI:
 
 ```
 flutter pub get
 ```
 
-Connect a mobile device via USB and run the app.
+### Step 3: Start the application
 
-### Step 3: Start your application
+Connect a mobile device via USB and run the app.
 
 **Android:**
 
@@ -65,27 +70,31 @@ Connect a mobile device via USB and run the app.
 flutter run -d <DEVICE_ID>
 ```
 
-You can get the IDs of all connected devices with `flutter devices`.
+You can get the IDs of all connected devices by running `flutter devices` in the command-line.
 
 **iOS:**
 
-Install Pods dependencies:
+Before the app can run, the pods need to be installed first:
 
 ```
 cd ios/
 pod install --repo-update
 ```
 
-Open the **workspace**(!) `ios/Runner.xcworkspace` in Xcode and adjust the *Signing / Developer Account* settings. Then, build and run the app in Xcode.
+Once the pods are installed, it is recommended to run the iOS portion of the app via Xcode as such:
+
+1. Open the generated **xcworkspace** (found at `ios/Runner.xcworkspace`) in Xcode 
+2. Access the *Signing & Capabilities* section of the project settings and ensure that it is configured correctly. 
+3. Lastly, select the connected physical iOS device and proceed to build and run the app.
 
 > [!NOTE]
->- The license string here grants a time-limited free trial which requires network connection to work.
+>- The license string here grants a time-limited free trial which requires a network connection to work.
 >- You can request a 30-day trial license via
    the [Request a Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=guide&package=mobile) link.
 
 ## License
 
-- You can request a 30-day trial license via the [Request a Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=github&package=mobile) link.
+- You can request a 30-day trial license via the [Trial License](https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=github&package=mobile) portal.
 
 ## Support
 

@@ -1,5 +1,5 @@
 # API reference
 
-- [Capture Vision API Reference)](https://pub.dev/documentation/dynamsoft_capture_vision_flutter/latest/)
+- [Capture Vision API Reference)](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/api-reference/)
 
-- [Barcode Reader API Reference](https://pub.dev/documentation/dynamsoft_barcode_reader_bundle_flutter/latest/)
+- [Barcode Reader API Reference](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/api-reference/barcode-scanner/index.html)
