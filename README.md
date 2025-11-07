@@ -26,6 +26,11 @@ This repository contains all of the Flutter samples created by the Dynamsoft tea
 > 
 > Alternatively, the Foundational edition is the full API that make up the Barcode Reader and does not come with its own UI. Working with the foundational API requires more effort, but allows the user to fully customize the UI and build the barcode scanner from the ground up.
 
+## API Reference
+
+- [BarcodeScanner APIs](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/api-reference/barcode-scanner/index.html)
+- [Foundational APIs](https://www.dynamsoft.com/barcode-reader/docs/mobile/programming/flutter/api-reference/)
+
 ## Samples
 
 | Sample Name                                                          | Description                                                                                                         |
