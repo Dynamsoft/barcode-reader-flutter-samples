@@ -35,7 +35,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
-  dynamsoft_barcode_reader_bundle_flutter: ^11.2.3000
+  dynamsoft_barcode_reader_bundle_flutter: ^11.2.5000
 
 dev_dependencies:
   flutter_test:
