@@ -47,6 +47,9 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     PermissionUtil.requestCameraPermission();
+    // Initialize the license.
+    // The license string here is a trial license. Note that network connection is required for this license to work.
+    // You can request an extension via the following link: https://www.dynamsoft.com/customer/license/trialLicense?product=dbr&utm_source=samples&package=flutter
     LicenseManager.initLicense('DLS2eyJvcmdhbml6YXRpb25JRCI6IjIwMDAwMSJ9').then((data) {
       final (isSuccess, message) = data;
       if (!isSuccess) {
@@ -85,6 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
     _cvr.stopCapturing();
     _camera.close();
     _cvr.removeResultReceiver(_receiver);
+    _cvr.dispose();
+    _camera.dispose();
   }
 
   @override
