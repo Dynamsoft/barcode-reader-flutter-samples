@@ -38,6 +38,7 @@ This repository contains all of the Flutter samples created by the Dynamsoft tea
 | [ScanBarcodes_ReadyToUseComponent](ScanBarcodes_ReadyToUseComponent) | This sample demonstrates the simplest way to implement the Barcode Reader using the `BarcodeScanner` (Ready-To-Use) API. |
 | [ScanBarcodes_FoundationalAPI](ScanBarcodes_FoundationalAPI)         | This sample demonstrates the simplest way to implement the Barcode Reader using the Foundational API.      |
 | [ScanDriversLicense](ScanDriversLicense)                             | This sample demonstrates how to implement the ability to scan drivers' licenses using the Foundational API.                                          |
+| [ScanVIN](ScanVIN) | This sample demonstrates how to recognize and extract information from VIN barcodes in real-time video streaming. |
 
 ## Quick Start
 
@@ -57,6 +58,12 @@ or
 
 ```bash
 cd ScanDriversLicense
+ ```
+
+or
+
+```bash
+cd ScanVIN
  ```
 
 ### Step 2: Install the dependencies of the sample via Flutter CLI:
