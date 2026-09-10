@@ -1,0 +1,21 @@
+name: barcode_reader_settings
+description: "BarcodeReaderSettings"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  dynamsoft_barcode_reader_bundle_flutter: ^11.6.2000
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true

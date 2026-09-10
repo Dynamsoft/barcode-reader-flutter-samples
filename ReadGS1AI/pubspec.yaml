@@ -1,0 +1,23 @@
+name: readgs1
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dynamsoft_barcode_reader_bundle_flutter: ^11.6.2000
+  dynamsoft_capture_vision_flutter: ^3.6.2000
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/ReadGS1AI.json

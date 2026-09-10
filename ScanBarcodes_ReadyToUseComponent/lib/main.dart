@@ -44,13 +44,13 @@ class _MyHomePageState extends State<MyHomePage> {
         //EnumResultStatus.finished
         if (scanningMode == EnumScanningMode.single) {
           var barcode = barcodeScanResult.barcodes![0];
-          _displayString = "Format: ${barcode!.formatString}\nText: ${barcode.text}";
+          _displayString = "Format: ${barcode.formatString}\nText: ${barcode.text}";
         } else {
           // EnumScanningMode.multiple
           _displayString =
               "Barcodes count: ${barcodeScanResult.barcodes!.length}\n\n"
               "${barcodeScanResult.barcodes!.map((barcode) {
-                return "Format: ${barcode!.formatString}\nText: ${barcode.text}";
+                return "Format: ${barcode.formatString}\nText: ${barcode.text}";
               }).join("\n\n")}";
         }
       }

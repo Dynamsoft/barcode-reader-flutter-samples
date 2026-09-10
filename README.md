@@ -37,8 +37,12 @@ This repository contains all of the Flutter samples created by the Dynamsoft tea
 |----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | [ScanBarcodes_ReadyToUseComponent](ScanBarcodes_ReadyToUseComponent) | This sample demonstrates the simplest way to implement the Barcode Reader using the `BarcodeScanner` (Ready-To-Use) API. |
 | [ScanBarcodes_FoundationalAPI](ScanBarcodes_FoundationalAPI)         | This sample demonstrates the simplest way to implement the Barcode Reader using the Foundational API.      |
-| [ScanDriversLicense](ScanDriversLicense)                             | This sample demonstrates how to implement the ability to scan drivers' licenses using the Foundational API.                                          |
-| [ScanVIN](ScanVIN) | This sample demonstrates how to recognize and extract information from VIN barcodes in real-time video streaming. |
+| [BarcodeReaderSettings](BarcodeReaderSettings)                       | This sample demonstrates real-time barcode result rendering with a full-screen camera preview and bottom result overlay. |
+| [LocateAnItemWithBarcode](LocateAnItemWithBarcode)                   | This sample demonstrates how to locate a specific barcode by its text. Useful for inventory management and warehouse operations. |
+| [ReadGS1AI](ReadGS1AI)                                               | This sample demonstrates how to parse and decode GS1 Application Identifiers (AIs) from barcodes. |
+| [ScanDriversLicense](ScanDriversLicense)                             | This sample demonstrates how to implement the ability to scan drivers' licenses using the Foundational API.       |
+| [ScanVIN](ScanVIN)                                                   | This sample demonstrates how to recognize and extract information from VIN barcodes in real-time video streaming. |
+| [ScenarioOptimizedScanning](ScenarioOptimizedScanning)               | This sample demonstrates template-driven scanner optimization for different barcode formats and scenarios. |
 
 ## Quick Start
 
@@ -57,6 +61,24 @@ cd ScanBarcodes_FoundationalAPI
 or
 
 ```bash
+cd BarcodeReaderSettings
+ ```
+
+or
+
+```bash
+cd LocateAnItemWithBarcode
+ ```
+
+ or
+
+```bash
+cd ReadGS1AI
+ ```
+
+or
+
+```bash
 cd ScanDriversLicense
  ```
 
@@ -64,6 +86,12 @@ or
 
 ```bash
 cd ScanVIN
+ ```
+
+or
+
+```bash
+cd ScenarioOptimizedScanning
  ```
 
 ### Step 2: Install the dependencies of the sample via Flutter CLI:

@@ -11,11 +11,11 @@ class ScannerPage extends StatefulWidget {
 }
 
 class _ScannerPageState extends State<ScannerPage> with RouteAware {
-  final CaptureVisionRouter _cvr = CaptureVisionRouter.instance
+  final CaptureVisionRouter _cvr = CaptureVisionRouter()
     ..addResultFilter(
       MultiFrameResultCrossFilter()..enableResultCrossVerification(EnumCapturedResultItemType.barcode.value, true),
     );
-  final CameraEnhancer _camera = CameraEnhancer.instance;
+  final CameraEnhancer _camera = CameraEnhancer();
   final String _templateName = "ReadVINBarcode";
   late final CapturedResultReceiver _receiver = CapturedResultReceiver()
     ..onParsedResultsReceived = (ParsedResult result) async {

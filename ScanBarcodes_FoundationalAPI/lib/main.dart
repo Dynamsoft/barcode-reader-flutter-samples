@@ -29,8 +29,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final CaptureVisionRouter _cvr = CaptureVisionRouter.instance;
-  final CameraEnhancer _camera = CameraEnhancer.instance;
+  final CaptureVisionRouter _cvr = CaptureVisionRouter();
+  final CameraEnhancer _camera = CameraEnhancer();
   final String _templateName = EnumPresetTemplate.readBarcodes;
   late final CapturedResultReceiver _receiver = CapturedResultReceiver()
     ..onDecodedBarcodesReceived = (DecodedBarcodesResult result) async {
