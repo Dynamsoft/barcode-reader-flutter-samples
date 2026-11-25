@@ -1,3 +1,5 @@
 Podfile
 pubspec.lock
 .idea
+
+build/
